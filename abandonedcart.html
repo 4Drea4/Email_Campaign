@@ -18,22 +18,26 @@
       .p-24 { padding:24px; }
       .h1 { font-family: Arial, Helvetica, sans-serif; font-size:26px; line-height:32px; font-weight:700; color:#111111; margin:0; }
       .p { font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height:24px; color:#333333; margin:0; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; color:#666666; margin:0; }
       .muted { color:#666666; }
       .btn a { display:inline-block; padding:14px 18px; font-family: Arial, Helvetica, sans-serif; font-size:16px; font-weight:700; border-radius:12px; }
       .btn-primary a { background:#111111; color:#FFFFFF; }
+      .btn-ghost a { background:#EFEDE8; color:#111111; }
       .divider { height:1px; background:#E7E3DC; }
       .pill { display:inline-block; padding:8px 10px; border-radius:999px; font-family: Arial, Helvetica, sans-serif; font-size:12px; font-weight:700; background:#EFEDE8; color:#111111; }
+      .note { background:#F7F5F2; border-radius:12px; }
+      .shadow { box-shadow: 0 10px 26px rgba(17,17,17,0.06); }
       @media screen and (max-width:600px){
         .p-24{ padding:18px !important; }
         .h1{ font-size:22px !important; line-height:28px !important; }
         .stack{ display:block !important; width:100% !important; }
         .gap-top{ padding-top:14px !important; }
+        .align-left{ text-align:left !important; }
       }
     </style>
   </head>
 
   <body class="bg" style="background:#F7F5F2; margin:0; padding:0;">
-    <!-- Preheader -->
     <div style="display:none; font-size:1px; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all;">
       Your cart is saved. Checkout takes less than a minute.
     </div>
@@ -42,7 +46,6 @@
       <tr>
         <td align="center" style="padding:24px 12px;">
           <table role="presentation" class="container" cellpadding="0" cellspacing="0" border="0" style="width:100%; max-width:600px;">
-            <!-- Brand -->
             <tr>
               <td align="center" style="padding:10px 0 16px 0;">
                 <div style="font-family: Arial, Helvetica, sans-serif; font-size:14px; letter-spacing:2px; color:#111111; font-weight:700;">
@@ -52,7 +55,7 @@
             </tr>
 
             <tr>
-              <td class="card" style="background:#FFFFFF; border-radius:14px; overflow:hidden;">
+              <td class="card shadow" style="background:#FFFFFF; border-radius:14px; overflow:hidden; box-shadow: 0 10px 26px rgba(17,17,17,0.06);">
                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
                     <td class="p-24" style="padding:24px;">
@@ -69,52 +72,121 @@
                       <div style="height:10px;">&nbsp;</div>
 
                       <p class="p muted" style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height:24px; color:#666666; margin:0;">
-                        Your items are saved. If you have questions, just reply to this email.
+                        Your items are saved. Checkout takes less than a minute.
                       </p>
 
-                      <div style="height:18px;">&nbsp;</div>
+                      <div style="height:14px;">&nbsp;</div>
 
-                      <!-- Cart item module (repeatable) -->
-                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#F7F5F2; border-radius:12px;">
+                      <!-- Urgency / perk note -->
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="note" style="background:#F7F5F2; border-radius:12px;">
                         <tr>
-                          <td style="padding:14px;">
-                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                              <tr>
-                                <td class="stack" width="92" valign="top" style="padding-right:12px;">
-                                  <img src="https://via.placeholder.com/184x184.png?text=Cart+Item" width="92" alt="Cart item" style="width:92px; height:auto; border-radius:10px;" />
-                                </td>
-                                <td class="stack gap-top" valign="top">
-                                  <p class="p" style="font-family: Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; color:#111111; margin:0; font-weight:700;">
-                                    Radiance Serum
-                                  </p>
-                                  <p class="p muted" style="font-family: Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; color:#666666; margin:0;">
-                                    Size: 30ml • Qty: 1
-                                  </p>
-                                </td>
-                                <td valign="top" align="right" style="padding-left:10px;">
-                                  <p class="p" style="font-family: Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; color:#111111; margin:0; font-weight:700;">
-                                    $38
-                                  </p>
-                                </td>
-                              </tr>
-                            </table>
+                          <td style="padding:12px 14px;">
+                            <p class="small" style="font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; color:#666666; margin:0;">
+                              ⏳ <strong style="color:#111111;">Heads up:</strong> stock moves fast. Free shipping over $50.
+                            </p>
                           </td>
                         </tr>
                       </table>
 
                       <div style="height:16px;">&nbsp;</div>
 
+                      <!-- Cart item module -->
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#F7F5F2; border-radius:12px;">
+                        <tr>
+                          <td style="padding:14px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td class="stack" width="92" valign="top" style="padding-right:12px;">
+                                  <img src="radianceserum.jpg" width="92" alt="Radiance Serum" style="width:92px; height:auto; border-radius:10px;" />
+                                </td>
+                                <td class="stack gap-top" valign="top">
+                                  <p style="font-family: Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; color:#111111; margin:0; font-weight:700;">
+                                    Radiance Serum
+                                  </p>
+                                  <p style="font-family: Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; color:#666666; margin:0;">
+                                    Size: 30ml • Qty: 1
+                                  </p>
+                                  <p style="font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; color:#666666; margin:8px 0 0 0;">
+                                    Brightens dull-looking skin. Lightweight, daily use.
+                                  </p>
+                                </td>
+                                <td valign="top" align="right" style="padding-left:10px;">
+                                  <p style="font-family: Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; color:#111111; margin:0; font-weight:700;">
+                                    $38
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+
+                            <!-- Order summary -->
+                            <div style="height:12px;">&nbsp;</div>
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td style="font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; color:#666666;">
+                                  Subtotal
+                                </td>
+                                <td align="right" style="font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; color:#666666;">
+                                  $38
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; color:#666666;">
+                                  Estimated shipping
+                                </td>
+                                <td align="right" style="font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; color:#666666;">
+                                  Calculated at checkout
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-top:6px; font-family: Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; color:#111111; font-weight:700;">
+                                  Total
+                                </td>
+                                <td align="right" style="padding-top:6px; font-family: Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; color:#111111; font-weight:700;">
+                                  $38+
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </table>
+
+                      <div style="height:16px;">&nbsp;</div>
+
+                      <!-- Primary + secondary CTA -->
                       <div class="btn btn-primary" style="text-align:left;">
-                        <a href="https://example.com" target="_blank" style="display:inline-block; padding:14px 18px; font-family: Arial, Helvetica, sans-serif; font-size:16px; font-weight:700; border-radius:12px; background:#111111; color:#FFFFFF;">
+                        <a href="/" target="_blank" style="display:inline-block; padding:14px 18px; font-family: Arial, Helvetica, sans-serif; font-size:16px; font-weight:700; border-radius:12px; background:#111111; color:#FFFFFF;">
                           Return to Checkout
                         </a>
                       </div>
 
-                      <div style="height:16px;">&nbsp;</div>
+                      <div style="height:10px;">&nbsp;</div>
 
-                      <p class="p muted" style="font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; color:#666666; margin:0;">
-                        Why shop with us: 30-day returns • Secure checkout • Fast shipping
+                      <div class="btn btn-ghost" style="text-align:left;">
+                        <a href="/" target="_blank" style="display:inline-block; padding:14px 18px; font-family: Arial, Helvetica, sans-serif; font-size:16px; font-weight:700; border-radius:12px; background:#EFEDE8; color:#111111;">
+                          View Cart
+                        </a>
+                      </div>
+
+                      <div style="height:14px;">&nbsp;</div>
+
+                      <!-- Trust row -->
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td class="stack" style="padding:8px 10px; background:#F7F5F2; border-radius:12px;">
+                            <p class="small" style="font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; color:#666666; margin:0;">
+                               Secure checkout &nbsp;•&nbsp;  Fast shipping &nbsp;•&nbsp; 30-day returns
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <div style="height:10px;">&nbsp;</div>
+
+                      <p class="small" style="font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; color:#666666; margin:0;">
+                        Need help choosing? Reply to this email and we’ll help you pick the best routine.
                       </p>
+
                     </td>
                   </tr>
                 </table>
@@ -124,10 +196,10 @@
                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
                     <td class="p-24" style="padding:24px;">
-                      <p class="p muted" style="font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; color:#666666; margin:0;">
+                      <p class="small" style="font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; color:#666666; margin:0;">
                         If you already purchased, you can ignore this email.
                         <br />
-                        <a href="https://example.com" style="color:#111111; text-decoration:underline;">Unsubscribe</a>
+                        <a href="/" style="color:#111111; text-decoration:underline;">Unsubscribe</a>
                       </p>
                     </td>
                   </tr>
